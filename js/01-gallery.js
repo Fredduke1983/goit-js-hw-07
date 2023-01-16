@@ -10,3 +10,9 @@ galleryItems.map((a) => {
 
   galleryRef.append(img);
 });
+
+galleryRef.addEventListener("click", foo);
+
+function foo(e) {
+  console.log((e.target.src = "eee"));
+}
